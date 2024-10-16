@@ -1,0 +1,224 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  } 
+  
+section {
+    padding: 60px 20px;
+    background-color: #121212; 
+    margin-bottom: 0;
+    border-bottom: 1px solid #333; 
+}
+  
+h1, h2, p, li, button {
+    text-align: center;
+}
+  
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #575757;
+}
+  
+a {
+    text-decoration: none;
+    color: white;
+}
+  
+a:hover {
+    color: #ff6347;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+  
+#navbar ul li {
+    display: inline;
+}
+  
+#navbar ul li a {
+    color: white;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+  
+#navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Ensure the hobbies section looks good on all screen sizes */
+#hobbies ul {
+    list-style-type: disc; 
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+  
+#hobbies ul li {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+}
+  
+@media (min-width: 768px) {
+    #hobbies ul li {
+      flex-direction: row; /* Align items side by side on larger screens */
+      justify-content: flex-start;
+      align-items: center;
+}
+  
+    #hobbies ul li img {
+      margin-left: 20px; /* Space between text and image */
+    }
+}
+
+/* Center the project content */
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+  
+@media (min-width: 768px) {
+    .project {
+      flex-direction: row; /* Place image and button side by side on larger screens */
+    }
+  
+    .project img {
+      margin-right: 20px; 
+    }
+}  
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%; 
+}
+
+#contact form input, #contact form textarea {
+    margin-bottom: 10px; /* Space between the form elements */
+    width: 100%;
+    max-width: 400px; /* Limit the input size */
+}
+
+.career-content, .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+ul li img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+  
+.small-image {
+    width: 200px; 
+    height: auto;
+    margin-top: 20px;
+}
+  
+  
+.project-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 10px;
+}
+
+
+
+/* Two-column layout for the hobbies section */
+.hobbies-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hobbies-list {
+    flex: 1; /* Left column takes up half the space */
+    padding-right: 20px; 
+}
+
+.hobbies-list ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    font-size: 18px;
+    margin-bottom: 20px; 
+}
+
+/* Style for hiking image below the text */
+.hobbies-list img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-top: 20px; 
+    border-radius: 10px;
+}
+
+/* Right column for the other images */
+.hobbies-images {
+    flex: 1; /* Right column takes up the other half */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.hobbies-images img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    border-radius: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hobbies-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .hobbies-list, .hobbies-images {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .hobbies-images img {
+        max-width: 80%; 
+    }
+}
+ 

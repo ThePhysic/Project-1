@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of ThePhysic, showcasing interests, hobbies, projects, and career aspirations." />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#projects">Projects</a></li> 
+          <li><a href="#contact">Contact</a></li> 
+        </ul>
+    </nav>
+      
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+      <h1>Ridleigh's Portfolio</h1>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h1>Hobbies</h1>
+        <div class="hobbies-container">
+            <!-- Left column for text and hiking image -->
+            <div class="hobbies-list">
+                <ul>
+                    <li>Watching anime</li>
+                    <li>Hiking</li>
+                    <li>Creating automations and programs to help me in my daily life!</li>
+                    <li>Going to the gym</li>
+                </ul>
+                <!-- Hiking image placed under the text list -->
+                <img src="https://thephotohikes.com/wp-content/uploads/2023/06/Pilatus-Hike-2-1024x768.jpeg" alt="Hiking image" />
+            </div>
+            
+            <!-- Right column for other images -->
+            <div class="hobbies-images">
+                <img src="https://static.wikia.nocookie.net/shingekinokyojin/images/d/d8/Attack_on_Titan_Season_1.jpg/revision/latest?cb=20211005182832" alt="Anime image" />
+            </div>
+        </div>
+    </section>
+      
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+          <img class="project-image" src="https://st.depositphotos.com/1052079/4683/v/450/depositphotos_46834647-stock-illustration-icon-of-the-gentleman.jpg" alt="Discord Butler project">
+          <button onclick="window.open('https://github.com/ThePhysic/Discord-Butler', '_blank')">Discord Butler</button>
+        </div>
+      </section>                
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" required></textarea><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <script src="./script.js"></script> 
+  </body>
+</html>
